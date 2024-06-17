@@ -5,20 +5,20 @@
 class AwsGoogleLogin < Formula
   desc ""
   homepage ""
-  version "0.0.2-test5"
+  version "1.0.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v0.0.2-test5/aws-google-login_Darwin_x86_64.tar.gz"
-      sha256 "5a01cfad99b701f87431b7a136fe84907959fee8e12ff17176d4df05bf624da9"
+      url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v1.0.0/aws-google-login_Darwin_x86_64.tar.gz"
+      sha256 "c306b5af0d8766c40a2972d0731e1bff5280f2f8dfa614666910e3d93a88c36a"
 
       def install
         bin.install "aws-google-login"
       end
     end
     on_arm do
-      url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v0.0.2-test5/aws-google-login_Darwin_arm64.tar.gz"
-      sha256 "1391e60dbf00795de4a17e14ab7852d092bff6672b6e30e1f64a8e1792903479"
+      url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v1.0.0/aws-google-login_Darwin_arm64.tar.gz"
+      sha256 "1e3df50a2f1974c6d3bd6b6b5098fc476c64ee0ce3ff6340035442de3fd0f3d5"
 
       def install
         bin.install "aws-google-login"
@@ -29,8 +29,8 @@ class AwsGoogleLogin < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v0.0.2-test5/aws-google-login_Linux_x86_64.tar.gz"
-        sha256 "f522b4b5ff8de4a4a4a1b029743c8fed7e3ab4948f090c4c2d11df862c7e1756"
+        url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v1.0.0/aws-google-login_Linux_x86_64.tar.gz"
+        sha256 "ad1da7603d1eceabacf53e02973c6c8d14ae3e475849d2ed6d802a3dde6f16a0"
 
         def install
           bin.install "aws-google-login"
@@ -39,8 +39,8 @@ class AwsGoogleLogin < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v0.0.2-test5/aws-google-login_Linux_arm64.tar.gz"
-        sha256 "7781b40f709b79699e1e3a87708758fca34bc1605c9b897a10023d40db1a8381"
+        url "https://github.com/Photosynth-inc/aws-google-login/releases/download/v1.0.0/aws-google-login_Linux_arm64.tar.gz"
+        sha256 "a270314f6aa1388d6a6621ba29301ae254a21c2b7430224497c3ead938417581"
 
         def install
           bin.install "aws-google-login"
