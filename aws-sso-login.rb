@@ -5,21 +5,21 @@
 class AwsSsoLogin < Formula
   desc "Interactive AWS SSO (Identity Center) login CLI"
   homepage "https://github.com/Photosynth-inc/aws-sso-login"
-  version "0.2.1"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.2.1/aws-sso-login_Darwin_x86_64.tar.gz"
-      sha256 "293de4327ffdab28ee57e5dc3ebaa48cd1125dfb7b0c48c6a974667151a449e5"
+      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.3.0/aws-sso-login_Darwin_x86_64.tar.gz"
+      sha256 "6d4902d602d7747d9b82d92207214e3e1f4e61976c326641eb43781cd91c20f7"
 
       def install
         bin.install "aws-sso-login"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.2.1/aws-sso-login_Darwin_arm64.tar.gz"
-      sha256 "f62c1f45f4e57ccfe317244be383ecaa7cf8a0b96a5bf0d2f86036c3fbdefb06"
+      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.3.0/aws-sso-login_Darwin_arm64.tar.gz"
+      sha256 "37e2910188fa1509b18b4fb6a4034b8e25a29a9c7fe97bb83f8f7330732ff251"
 
       def install
         bin.install "aws-sso-login"
@@ -29,15 +29,15 @@ class AwsSsoLogin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.2.1/aws-sso-login_Linux_x86_64.tar.gz"
-      sha256 "6f760a9ac4eac7ffe61af6bfaa76b9e16e314e6242433f855eb59c18a67e520b"
+      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.3.0/aws-sso-login_Linux_x86_64.tar.gz"
+      sha256 "f7e33acf34192a7ee213f45e1166d0d269536808cffcdad7b777df4bc8768ad3"
       def install
         bin.install "aws-sso-login"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.2.1/aws-sso-login_Linux_arm64.tar.gz"
-      sha256 "df8b8a2c81829f9239df93fa6b161777e4dc9fffcec3451cba9885daa604459a"
+      url "https://github.com/Photosynth-inc/aws-sso-login/releases/download/v0.3.0/aws-sso-login_Linux_arm64.tar.gz"
+      sha256 "9aaebddc99a242ed42bbdf70b49aa048699f0a7d944925abe295af8a8443da05"
       def install
         bin.install "aws-sso-login"
       end
